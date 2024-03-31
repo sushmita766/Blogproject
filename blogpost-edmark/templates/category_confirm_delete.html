@@ -1,0 +1,15 @@
+{% extends 'base.html'%}
+
+{% block title_block %}Homepage{% endblock %}
+
+{% block content_block %}
+
+<h1>Delete Category</h1>
+<p>Are you sure you want to delete "{{ category.title }}"?</p>
+<form action="" method="post" onsubmit="return confirmDelete('{{ category.title }}');">
+    {% csrf_token %}
+    <a href="{% url 'category_list' %}">Cancel</a>
+    <input type="submit" value="Confirm">
+</form>
+
+{% endblock %}

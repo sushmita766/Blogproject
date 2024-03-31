@@ -1,0 +1,45 @@
+{% extends 'base.html'%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* CSS for the card */
+        .card {
+            width: 18rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        /* CSS for the image */
+        .card-img-top {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* CSS for the title */
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+
+        /* CSS for the text content */
+        .card-text {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* CSS for the button */
+        .btn-primary {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
